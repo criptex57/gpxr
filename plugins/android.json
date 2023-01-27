@@ -1,0 +1,36 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.gpxR.criptex57"
+    },
+    "cordova-plugin-device-motion": {
+      "PACKAGE_NAME": "com.gpxR.criptex57"
+    },
+    "cordova-plugin-device-orientation": {
+      "PACKAGE_NAME": "com.gpxR.criptex57"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.gpxR.criptex57"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.gpxR.criptex57"
+    },
+    "maurodx-cordova-plugin-file-selector": {
+      "PACKAGE_NAME": "com.gpxR.criptex57"
+    },
+    "cordova-plugin-bluetoothle": {
+      "PACKAGE_NAME": "com.gpxR.criptex57"
+    },
+    "cordova-plugin-bluetooth-serial": {
+      "PACKAGE_NAME": "com.gpxR.criptex57"
+    }
+  },
+  "dependent_plugins": {}
+}

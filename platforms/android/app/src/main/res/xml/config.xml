@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.gpxR.criptex57" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Accelerometer">
+        <param name="android-package" value="org.apache.cordova.devicemotion.AccelListener" />
+    </feature>
+    <feature name="Compass">
+        <param name="android-package" value="org.apache.cordova.deviceorientation.CompassListener" />
+    </feature>
+    <feature name="Geolocation">
+        <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
+    </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <allow-navigation href="cdvfile:*" />
+    <feature name="BluetoothLePlugin">
+        <param name="android-package" value="com.randdusing.bluetoothle.BluetoothLePlugin" />
+    </feature>
+    <feature name="FileChooser">
+        <param name="android-package" value="com.megster.cordova.FileChooser" />
+    </feature>
+    <feature name="BluetoothSerial">
+        <param name="android-package" value="com.megster.cordova.BluetoothSerial" />
+    </feature>
+    <name>GPXR</name>
+    <description>
+        GPX Reader
+    </description>
+    <author email="criptex57@gmail.com">
+        criptex57
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <icon src="www/img/logo.png" />
+    <allow-intent href="market:*" />
+    <preference name="loglevel" value="DEBUG" />
+</widget>

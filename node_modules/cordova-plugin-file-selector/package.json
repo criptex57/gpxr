@@ -1,0 +1,59 @@
+{
+  "_from": "cordova-plugin-file-selector",
+  "_id": "cordova-plugin-file-selector@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-fhC9Re93JeDoD//eNP4G2OOyKuj8yWIsJu6jXzavXvs6K/HcP6VGIfLXcGjJSHSI0+rnN2J5szwWV5famrtS1g==",
+  "_location": "/cordova-plugin-file-selector",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-file-selector",
+    "name": "cordova-plugin-file-selector",
+    "escapedName": "cordova-plugin-file-selector",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-file-selector/-/cordova-plugin-file-selector-1.0.0.tgz",
+  "_shasum": "685082eed05a448c7d56793ab1eb97787a4d3b75",
+  "_spec": "cordova-plugin-file-selector",
+  "_where": "C:\\Users\\distr\\gpxReader\\gpxR",
+  "author": {
+    "name": "Don Coleman"
+  },
+  "bugs": {
+    "url": "https://github.com/cinthiaro/cordova-plugin-file-selector/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-file-selector",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova Plugin that supplies a File Selector.",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=2.8.0"
+    }
+  ],
+  "homepage": "https://github.com/cinthiaro/cordova-plugin-file-selector#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "Apache License, Version 2.0",
+  "name": "cordova-plugin-file-selector",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cinthiaro/cordova-plugin-file-selector.git"
+  },
+  "version": "1.0.0"
+}

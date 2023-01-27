@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <meta name="msapplication-tap-highlight" content="no" />
+    <title>GPXR</title>
+</head>
+<body>
+<div ng-app="gpxr" ng-controller="main">
+    <div ng-if="showError" class="alert alert-danger alert-dismissible" ng-click="$parent.showError = false;">
+       {{errorText}}
+        <button type="button" class="close">
+            <span>&times;</span>
+        </button>
+    </div>
+    <div ng-show="!loading" class="container" ng-include="'templates/bluetooth.html'"></div>
+    <div ng-if="loading" class="d-flex justify-content-center loading-spinner">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/include/angular.min.js"></script>
+<script type="text/javascript" src="js/include/ng-cordova-bluetoothle/ng-cordova-bluetoothle.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/include/jquery-3.4.1.slim.min.js"></script>
+<script type="text/javascript" src="js/include/popper.min.js"></script>
+<script type="text/javascript" src="js/include/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/include/leaflet/leaflet.js"></script>
+<script type="text/javascript" src="js/include/gpx.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<div>
+    <div class="row martop10">
+        <div class="col">
+            <button type="button" class="btn btn-info btn-block" ng-click="reloadMap()">Загрузить карту</button>
+        </div>
+        <div class="col" ng-if="!navigationCycleId">
+            <button type="button" ng-click="startNavigation()" class="btn btn-primary btn-block">Start</button>
+        </div>
+        <div class="col" ng-if="navigationCycleId">
+            <button type="button" ng-click="stopNavigation()" class="btn btn-primary btn-block">Stop</button>
+        </div>
+    </div>
+    <div class="row martop10">
+        <div class="col martop10">
+            <div id="map"></div>
+        </div>
+    </div>
+    <div class="row martop10">
+        <div class="col martop10">
+            <div ng-if="distanceToNearestPoint">distance {{distanceToNearestPoint}}</div>
+            <div ng-if="directionToNearestPoint">direction {{directionToNearestPoint}}</div>
+            <div ng-if="nextTurnData && nextTurnData.distance && nextTurnData.type && nextTurnData.angle">
+            distance:{{nextTurnData.distance}} 
+            type:{{nextTurnData.type}} 
+            side:{{nextTurnData.side}} 
+            angle:{{nextTurnData.angle}}</div>
+        </div>
+    </div>
+</div>

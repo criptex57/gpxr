@@ -1,0 +1,38 @@
+<div ng-controller="bluetooth">
+    <h1>GPXR</h1>
+
+    <div class="row martop10">
+        <div class="col">
+            <div class="btn-group btn-block">
+                <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{!selectDevice?'Выберите bluetooth устройство':selectDevice.name}} {{connectionDevice?'подключено':connectionStatus?'ошибка':'подключение'}}
+                </button>
+                <div class="dropdown-menu">
+                    <a ng-repeat="(key, value) in foundDevices"
+                       ng-click="$parent.selectDevice = value; $parent.connected(value.address)"
+                       class="dropdown-item" href="#">
+                        <strong>{{value.address}}</strong> {{value.name}}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row martop10" ng-if="connectionDevice">
+        <div class="col">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" ng-model="input" type="text" placeholder="Serial" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button ng-click="sendToSerial(input)" class="btn btn-outline-secondary" type="button" id="button-addon2">Send to serial</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row martop10">
+        <div class="col">
+            <button type="button" ng-click="chooseFile()" class="btn btn-danger btn-block">{{selectedFile?selectedFile.name:'Выбрать GPX файл'}}</button>
+        </div>
+    </div>
+
+    <leaflet-map file-data="selectedFile"></leaflet-map>
+</div>
